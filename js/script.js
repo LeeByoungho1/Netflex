@@ -2,6 +2,10 @@
 var currentSectionIndex = 0;
 var sections = document.querySelectorAll('.section');
 
+if (currentSectionIndex == 0) {
+    $(".sideBar").css({ opacity: 0, transition: "opacity 0s ease" })
+}
+
 // 스크롤 이동 중 여부를 나타내는 변수
 let isScrolling = false;
 
